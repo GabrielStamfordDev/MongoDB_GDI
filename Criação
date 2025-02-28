@@ -1,0 +1,21 @@
+/*O banco de dados é sobre "Gerenciamento de Times Esportivos: Atletas, Técnicos, Jogos, Estatísticas". Faremos algo simples, sem precisar de um minimundo elaborado.
+Segue descrição do projeto: Simularemos um cenário de futebol. Atletas particiapam de vários jogos, os quais participam vários jogadores. Atletas possuem muitos técnicos, os quais possuem muitos atletas.
+Jogos possuem estatísticas, as quais pertencem a um único jogo.
+
+Criaremos, claro, uma coleção para cada entidade, ou seja, Atleta, Jogo, Técnico e Estatística e uma para cada relacionamento N:N.
+
+Uma instância de Atleta possui CPF (que em um modleo relacional seria a chave primária), nome, idade,
+altura, salario e data de nascimento.
+
+Uma instância de Técnico, semelhante à Atleta, possui CPF (que em um modleo relacional seria a chave primária), nome, idade,
+altura, salario e data de nascimento.
+
+Uma instância de Estatística, possui cod (que em um modleo relacional seria a chave primária), quantidade de chutes ao gol, quantidade de gols, quantidade de passes,
+quantidade de cartões amarelos, quantidade de cartões vermelhos.
+
+Uma instância de Jogo, possui cod (que em um modleo relacional seria a chave primária), tempo de duração, Placar, data e estatísticas do jogo.
+
+Uma instância de Atleta_Técnico possui CPF de Atleta e CPF do Técnico desse atleta (que em um modleo relacional seria uma chave primária composta)
+
+Uma instância de Atleta_Jogo possui CPF de Atleta e cod do Jogo que esse atleta jogou (que em um modleo relacional seria uma chave primária composta).
+*/
