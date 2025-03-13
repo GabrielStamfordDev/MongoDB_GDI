@@ -465,6 +465,22 @@ const cod_jogos = [
     4
 ];
 
+const tempos_jogados = [
+    90,
+    75,
+    85,
+    60,
+    45
+];
+
+const gols_marcados = [
+    2,
+    1,
+    0,
+    1,
+    3
+];
+
 // Garanto que os CPFs existem nas coleções aluno e tecnico antes de inserir
 for (let i = 0; i < cpfs_atletas.length; i++) {
     let atleta = db.Atletas.findOne({ CPF: cpfs_atletas[i] });
@@ -473,7 +489,9 @@ for (let i = 0; i < cpfs_atletas.length; i++) {
     if (atleta && jogo) {
         atleta_jogo.push({
             atleta_cpf: atleta.CPF,
-            jogo_cod: jogo.cod
+            jogo_cod: jogo.cod,
+            tempo_jogado: tempos_jogados[i],
+            gols_marcados: gols_marcados[i]
         });
     }
 }
